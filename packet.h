@@ -41,7 +41,7 @@ void packet_dump(Packet * packet)
 			cout << "Source Port: " << packet->source_port << endl;
 			cout << "Destination Port: " << packet->dest_port << endl;
 			cout << "Sequence Number: " << packet->num << endl;
-			cout << "Size: " << packet->size_or_offset << endl;
+			cout << "Size: " << packet->size_or_offset << endl << endl;
 			printf("Payload:\n%s\n", packet->payload);
 			break;
 
@@ -50,7 +50,7 @@ void packet_dump(Packet * packet)
 			cout << "Source Port: " << packet->source_port << endl;
 			cout << "Destination Port: " << packet->dest_port << endl;
 			cout << "Ack Number: " << packet->num << endl;
-			cout << "Offset: " << packet->size_or_offset << endl;
+			cout << "Offset: " << packet->size_or_offset << endl << endl;
 			break;
 	}
 }
